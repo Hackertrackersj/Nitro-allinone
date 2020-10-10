@@ -9,14 +9,25 @@
 clear
 echo 
 echo "
-          █▀▄▀█ █▀▀ █▀▀ ▄▀█ █▀█ ▄▀█ █▀▀ █▄▀ ▄▀█ █▀▀ █▀▀
-          █ ▀ █ ██▄ █▄█ █▀█ █▀▀ █▀█ █▄▄ █ █ █▀█ █▄█ ██▄
+           /$$   /$$ /$$   /$$                                          /$$ /$$ /$$                                        
+| $$$ | $$|__/  | $$                                         | $$| $$|__/                                        
+| $$$$| $$ /$$ /$$$$$$    /$$$$$$   /$$$$$$          /$$$$$$ | $$| $$ /$$ /$$$$$$$   /$$$$$$  /$$$$$$$   /$$$$$$ 
+| $$ $$ $$| $$|_  $$_/   /$$__  $$ /$$__  $$ /$$$$$$|____  $$| $$| $$| $$| $$__  $$ /$$__  $$| $$__  $$ /$$__  $$
+| $$  $$$$| $$  | $$    | $$  \__/| $$  \ $$|______/ /$$$$$$$| $$| $$| $$| $$  \ $$| $$  \ $$| $$  \ $$| $$$$$$$$
+| $$\  $$$| $$  | $$ /$$| $$      | $$  | $$        /$$__  $$| $$| $$| $$| $$  | $$| $$  | $$| $$  | $$| $$_____/
+| $$ \  $$| $$  |  $$$$/| $$      |  $$$$$$/       |  $$$$$$$| $$| $$| $$| $$  | $$|  $$$$$$/| $$  | $$|  $$$$$$$
+|__/  \__/|__/   \___/  |__/       \______/         \_______/|__/|__/|__/|__/  |__/ \______/ |__/  |__/ \_______/
+                                                                                                                 
+                                                                                                                 
+                                                                                                                 
 	                                                V 1.0" | lolcat	      
 echo "                   >>> created by:-Nitro " |lolcat
 echo "              >>> Keep Supporting:-Nitro Hacker " |lolcat
 echo " "
 echo -e "\e[92m=======================================================================\e[m "
-echo -e "\e[32m[\e[33m01\e[32m]\e[96m Termux-package \e[m                \e[32m[\e[33m11\e[32m]\e[96m Ngrok \e[m "                  
+echo -e "\e[32m[\e[33m01\e[32m]\e[96m Termux-package \e[m                \e[32m[\e[33m02\e[32m]\e[96m Ngrok \e[m " 
+echo -e "\e[32m[\e[33m03\e[32m]\e[96m Ngrok \e[m                         \e[32m[\e[33m4\e[32m]\e[96m e-mail bomber \e[m "
+echo -e "\e[32m[\e[33m05\e[32m]\e[96m Ngrok \e[m                         \e[32m[\e[33m00\e[32m]\e[96m e-mail bomber \e[m "                 
 echo -e "\e[92m=======================================================================\e[m "
 echo " "
 read -p $'\e[34m[*]\e[33m Enter Your Choice : \e[0m' n
@@ -56,7 +67,6 @@ read answer
 	else
 		echo
 		fi
-  
 elif [[ $n == 2 || $n == 02 ]]; then
 
 	     DIR="$HOME/ngrok"
@@ -86,7 +96,77 @@ read answer
        am start -a android.intent.action.VIEW -d https://youtu.be/oDYvGyEXgYw >> /dev/null 2>&1
 	else
 		echo
-		fi		  
+		fi
+elif [[ $n == 3 || $n == 03 ]]; then
+
+	     DIR="$HOME/Tbomb"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+	     cd Tbomb
+		 bash TBomb.sh
+
+	     else
+
+	      echo -e "\e[34m[*] Installing Tbomb \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      pkg install git
+		  pkg install python
+		  git clone https://github.com/Hackertrackersj/Tbomb.git
+		  cd Tbomb
+		  chmod +x TBomb.sh
+		  bash TBomb.sh
+	      
+		  fi
+	echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/gq7NKkNYuVA >> /dev/null 2>&1
+	else
+		echo
+elif [[ $n == 4 || $n == 04 ]]; then
+
+	     DIR="$HOME/Email_Bomber"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+		 cd Email_Bomber
+		 python emailbomber.py		 
+
+	     else
+
+	      echo -e "\e[34m[*] Installing Email_Bomber \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      git clone https://github.com/mohinparamasivam/Email_Bomber.git
+		  cd Email_Bomber
+		  python2 emailbomber.py
+	      
+		  fi
+	echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/1ocmbtCrAn8 >> /dev/null 2>&1
+	else
+		echo
+elif [[ $n == 0 || $n == 00 ]]; then
+ 
+	      echo -e "\e[34m[*] updating \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      cd Nitro-allinone
+		  bash update.sh	
+		  	fi		  		  
 else
 	      echo -e "\e[33m[\e[31m!\e[33m]\e[91mInvalid option \e[m" 
 fi	  

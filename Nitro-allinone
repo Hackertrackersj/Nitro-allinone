@@ -1,0 +1,47 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+############################################
+#        Project : Nitro-allinone           #
+#          author : Nitro                 #
+#       #
+############################################
+
+clear
+echo 
+echo "
+          █▀▄▀█ █▀▀ █▀▀ ▄▀█ █▀█ ▄▀█ █▀▀ █▄▀ ▄▀█ █▀▀ █▀▀
+          █ ▀ █ ██▄ █▄█ █▀█ █▀▀ █▀█ █▄▄ █ █ █▀█ █▄█ ██▄
+	                                                V 1.0" | lolcat	      
+echo "                   >>> created by:-Nitro " |lolcat
+echo "              >>> Keep Supporting:-Nitro Hacker " |lolcat
+echo " "
+echo -e "\e[92m=======================================================================\e[m "
+echo -e "\e[32m[\e[33m01\e[32m]\e[96m Termux-package \e[m                \e[32m[\e[33m11\e[32m]\e[96m Ngrok \e[m "                  
+echo -e "\e[92m=======================================================================\e[m "
+echo " "
+read -p $'\e[34m[*]\e[33m Enter Your Choice : \e[0m' n
+echo
+if [[ $n == 1 || $n == 01 ]]; then
+
+	     DIR="$HOME/Termux-Package"
+	        if [ -d "$DIR" ]; then
+	     cd $HOME
+	     cd Termux-Package
+	     python termux-package.py
+	     cd $HOME
+
+	     else
+
+	      echo -e "\e[34m[*] Installing Termux-Package \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      cd Nitro-allinone/tool/termux-package
+		  bash termux-package
+
+		  
+	else
+	      echo -e "\e[33m[\e[31m!\e[33m]\e[91mInvalid option \e[m" 
+fi	  
+  echo " "
+  exit

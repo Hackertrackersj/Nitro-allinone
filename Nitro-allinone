@@ -37,7 +37,7 @@ if [[ $n == 1 || $n == 01 ]]; then
 	      clear
 	      cd $HOME
 	      cd Nitro-allinone/tool/termux-package
-		  bash termux-package
+	     bash termux-package.sh
 		  fi
 else
 	      echo -e "\e[33m[\e[31m!\e[33m]\e[91mInvalid option \e[m" 

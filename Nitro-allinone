@@ -9,20 +9,23 @@
 clear
 echo 
 echo "
-            _ _             
+       _ _             
  _ __ (_) |_ _ __ ___  
 | '_ \| | __| '__/ _ \ 
 | | | | | |_| | | (_) |
 |_| |_|_|\__|_|  \___/ 
                        
-		       	                        V 1.0" | lolcat	      
+                                                                                                                 
+                                                                                                                 
+                                                                                                                 
+	                                                V 1.0" | lolcat	      
 echo "                   >>> created by:-Nitro " |lolcat
 echo "              >>> Keep Supporting:-Nitro Hacker " |lolcat
 echo " "
 echo -e "\e[92m=======================================================================\e[m "
 echo -e "\e[32m[\e[33m01\e[32m]\e[96m Termux-package \e[m                \e[32m[\e[33m02\e[32m]\e[96m Ngrok \e[m " 
-echo -e "\e[32m[\e[33m03\e[32m]\e[96m Ngrok \e[m                         \e[32m[\e[33m4\e[32m]\e[96m  e-mail bomber \e[m "
-echo -e "\e[32m[\e[33m05\e[32m]\e[96m Ngrok \e[m                         \e[32m[\e[33m00\e[32m]\e[96m update \e[m "                 
+echo -e "\e[32m[\e[33m03\e[32m]\e[96m Ngrok \e[m                         \e[32m[\e[33m4\e[32m]\e[96m e-mail bomber \e[m "
+echo -e "\e[32m[\e[33m05\e[32m]\e[96m Ngrok \e[m                         \e[32m[\e[33m00\e[32m]\e[96m e-mail bomber \e[m "                 
 echo -e "\e[92m=======================================================================\e[m "
 echo " "
 read -p $'\e[34m[*]\e[33m Enter Your Choice : \e[0m' n
@@ -124,7 +127,6 @@ read answer
        am start -a android.intent.action.VIEW -d https://youtu.be/gq7NKkNYuVA >> /dev/null 2>&1
 	else
 		echo
-		fi
 elif [[ $n == 4 || $n == 04 ]]; then
 
 	     DIR="$HOME/Email_Bomber"
@@ -154,7 +156,6 @@ read answer
        am start -a android.intent.action.VIEW -d https://youtu.be/1ocmbtCrAn8 >> /dev/null 2>&1
 	else
 		echo
-		fi
 elif [[ $n == 0 || $n == 00 ]]; then
  
 	      echo -e "\e[34m[*] updating \e[m "
@@ -162,8 +163,8 @@ elif [[ $n == 0 || $n == 00 ]]; then
 	      clear
 	      cd $HOME
 	      cd Nitro-allinone
-	       bash update.sh	
-	       fi		  		  
+		  bash update.sh	
+		  	fi		  		  
 else
 	      echo -e "\e[33m[\e[31m!\e[33m]\e[91mInvalid option \e[m" 
 fi	  

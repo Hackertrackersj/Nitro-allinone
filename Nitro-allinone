@@ -26,8 +26,8 @@ echo "              >>> Keep Supporting:-Nitro Hacker " |lolcat
 echo " "
 echo -e "\e[92m=======================================================================\e[m "
 echo -e "\e[32m[\e[33m01\e[32m]\e[96m Termux-package \e[m                \e[32m[\e[33m02\e[32m]\e[96m Ngrok \e[m " 
-echo -e "\e[32m[\e[33m03\e[32m]\e[96m Ngrok \e[m                         \e[32m[\e[33m4\e[32m]\e[96m e-mail bomber \e[m "
-echo -e "\e[32m[\e[33m05\e[32m]\e[96m Ngrok \e[m                         \e[32m[\e[33m00\e[32m]\e[96m e-mail bomber \e[m "                 
+echo -e "\e[32m[\e[33m03\e[32m]\e[96m Ngrok \e[m                         \e[32m[\e[33m4\e[32m]\e[96m  e-mail bomber \e[m "
+echo -e "\e[32m[\e[33m05\e[32m]\e[96m Ngrok \e[m                         \e[32m[\e[33m00\e[32m]\e[96m update \e[m "                 
 echo -e "\e[92m=======================================================================\e[m "
 echo " "
 read -p $'\e[34m[*]\e[33m Enter Your Choice : \e[0m' n

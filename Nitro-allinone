@@ -127,6 +127,7 @@ read answer
        am start -a android.intent.action.VIEW -d https://youtu.be/gq7NKkNYuVA >> /dev/null 2>&1
 	else
 		echo
+		fi
 elif [[ $n == 4 || $n == 04 ]]; then
 
 	     DIR="$HOME/Email_Bomber"

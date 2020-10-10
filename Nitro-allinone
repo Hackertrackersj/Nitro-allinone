@@ -43,7 +43,7 @@ if [[ $n == 1 || $n == 01 ]]; then
               ls
               chmod +x *
               ls
-              python termux-package.py
+              python2 termux-package.py
               cd $HOME
 		 fi
     echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "

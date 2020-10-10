@@ -57,7 +57,36 @@ read answer
 		echo
 		fi
   
-		  
+elif [[ $n == 2 || $n == 02 ]]; then
+
+	     DIR="$HOME/ngrok"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+	     ./ngrok help
+
+	     else
+
+	      echo -e "\e[34m[*] Installing ngrok \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      pkg install wget unzip -y
+	      wget https://github.com/Linux-Droid/Ngrok/raw/master/Ngrok_Linux_Droid.zip
+	      unzip Ngrok_Linux_Droid.zip && rm -rf Ngrok_Linux_Droid.zip
+	      chmod +x ngrok
+	      cd $HOME
+		  fi
+	echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/oDYvGyEXgYw >> /dev/null 2>&1
+	else
+		echo
+		fi		  
 else
 	      echo -e "\e[33m[\e[31m!\e[33m]\e[91mInvalid option \e[m" 
 fi	  

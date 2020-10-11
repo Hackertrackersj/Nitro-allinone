@@ -536,7 +536,7 @@ elif [[ $n == 16 ]]; then
 	     then
 	     cd $HOME
 	     cd IPGeoLocation
-	     ./ip2geolocation.py -h
+	     ./ip2geolocation.py
 	     
 	     else
 	     echo -e "\e[34m[*] Installing IPGeoLocation \e[m "

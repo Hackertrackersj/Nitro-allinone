@@ -414,7 +414,7 @@ read answer
  
  	 if [ "$answer" != "${answer#[Yy]}" ] ;then
        
-       am start -a android.intent.action.VIEW -d https://youtu.be/8iiosX0lbh0 >> /dev/null 2>&1
+       am start -a android.intent.action.VIEW -d https://youtu.be/7JmhNAXwcio >> /dev/null 2>&1
 	else
 		cd $HOME
 		cd Nitro-allinone

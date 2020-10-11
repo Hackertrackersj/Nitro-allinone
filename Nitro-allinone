@@ -272,7 +272,7 @@ elif [[ $n == 8 || $n == 08 ]]; then
 	      cd $HOME
 	      pkg install unstable-repo
 	      pkg install metasploit
-		  fi
+	      fi
 	echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
 read answer
@@ -299,10 +299,9 @@ elif [[ $n == 9 || $n == 09 ]]; then
 	      clear
 	      cd $HOME
 	      git clone https://github.com/LOoLzeC/Evil-create-framework.git 
-		  cd Evil-create-framework 
-		  sh install.sh 
-	      
-		  fi
+	      cd Evil-create-framework 
+	      sh install.sh 
+	      fi
 	echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
 read answer
@@ -319,7 +318,7 @@ elif [[ $n == 10 ]]; then
                 if [ -d "$DIR" ]
 	     then
 	     cd $HOME
-		 nmap -h
+	     nmap -h
 
 	     else
 
@@ -331,7 +330,7 @@ elif [[ $n == 10 ]]; then
 	      apt upgrade
               pkg install nmap
 	      nmap -h 
-		  fi
+	      fi
 	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
 read answer
@@ -348,8 +347,8 @@ elif [[ $n == 11 ]]; then
                 if [ -d "$DIR" ]
 	     then
 	     cd $HOME
-		 cd sqlmap
-		 python2 sqlmap.py -h
+	     cd sqlmap
+              python2 sqlmap.py -h
 		 else
 
 	      echo -e "\e[34m[*] Installing sqlmap \e[m "
@@ -383,11 +382,10 @@ elif [[ $n == 12 ]]; then
 	      sleep 5
 	      clear
 	      cd $HOME
-		  apt update
-		  apt upgrade
-		  apt install hydra
-	      
-		  fi
+	      apt update
+ 	      apt upgrade
+	      apt install hydra
+	      fi
 	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
 read answer

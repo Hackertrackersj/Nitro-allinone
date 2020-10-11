@@ -24,6 +24,7 @@ echo -e "\e[32m[\e[33m03\e[32m]\e[96m Tbomb \e[m                \e[32m[\e[33m04\
 echo -e "\e[32m[\e[33m05\e[32m]\e[96m Tool-backup \e[m          \e[32m[\e[33m06\e[32m]\e[96m Pass-gen \e[m "
 echo -e "\e[32m[\e[33m07\e[32m]\e[96m Tool-x \e[m               \e[32m[\e[33m08\e[32m]\e[96m metasploit \e[m "
 echo -e "\e[32m[\e[33m09\e[32m]\e[96m Evil-create framwork \e[m \e[32m[\e[33m10\e[32m]\e[96m nmap \e[m "
+echo -e "\e[32m[\e[33m09\e[32m]\e[96m sqlmap                    \e[m \e[32m[\e[33m10\e[32m]\e[96m nmap \e[m "
 echo -e "\e[32m[\e[33m00\e[32m]\e[96m update \e[m "                 
 echo -e "\e[92m=========================================================\e[m "
 echo " "
@@ -340,7 +341,65 @@ read answer
        am start -a android.intent.action.VIEW -d https://youtu.be/gKkkRM-eWTQ >> /dev/null 2>&1
 	else
 		echo     
-	fi												
+	fi		
+elif [[ $n == 11 ]]; then
+
+	     DIR="$HOME/sqlmap"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+		 cd sqlmap
+		 python2 sqlmap.py -h
+
+	     else
+
+	      echo -e "\e[34m[*] Installing sqlmap \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+		  git clone https://github.com/sqlmapproject/sqlmap
+		  python sqlmap.py -h
+	      
+		  fi
+	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/8iiosX0lbh0 >> /dev/null 2>&1
+	else
+		echo  
+		fi   	
+elif [[ $n == 12 ]]; then
+
+	     DIR="$HOME/Hydra"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+		 hydra -h
+
+	     else
+
+	      echo -e "\e[34m[*] Installing hyda \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+		  apt update
+		  apt upgrade
+		  apt install hydra
+	      
+		  fi
+	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/8iiosX0lbh0 >> /dev/null 2>&1
+	else
+		echo  
+		fi   																				
 elif [[ $n == 0 || $n == 00 ]]; then
 	      DIR="$HOME/"
 	      echo -e "\e[34m[*] updating \e[m "

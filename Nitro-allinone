@@ -350,9 +350,8 @@ elif [[ $n == 0 || $n == 00 ]]; then
 	      cd Nitro-allinone
 	      bash update.sh	
 	      fi
-				  		  
-else
+ else
   echo -e "\e[33m[\e[31m!\e[33m]\e[91mInvalid option \e[m" 
 fi	  
-  echo " "
+  echo
   exit

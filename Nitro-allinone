@@ -682,9 +682,9 @@ elif [[ $n == 20 ]]; then
 	      cd $HOME
 	      apt update
  	      apt upgrade
-	      git clone https://github.com/thewhiteh4t/seeker.git
+	      git clone https://github.com/thewhiteh4t/seeker
 		  cd seeker/
-		  chmod 777 termux_install.sh
+		  chmod +x *
 		  ./termux_install.sh
 		  ./seeker.py
 	      fi

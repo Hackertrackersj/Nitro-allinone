@@ -28,15 +28,19 @@ echo " "
 sleep 6.0
 clear
 echo -e "$red             ChEcKiNg..>$rset"
+echo -e "$grn      Subscribe Nitro hacker$rset"
 sleep 2.0
 clear
 echo -e "$red             ChEcKiNg...>$rset"
+echo -e "$grn      Subscribe Nitro hacker$rset"
 sleep 2.0
 clear
 echo -e "$red             ChEcKiNg....>$rset"
+echo -e "$grn       Subscribe Nitro hacker$rset"
 sleep 2.0
 clear
 echo -e "$red              ChEcKiNg.....>$rset"
+echo -e "$grn       Subscribe Nitro hacker$rset"
 sleep 2.0
 clear
 echo " "

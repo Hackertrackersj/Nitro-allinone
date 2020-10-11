@@ -258,12 +258,18 @@ read answer
 elif [[ $n == 8 || $n == 08 ]]; then
 
 	     DIR="$HOME/metasploit"
-	      echo -e "\e[34m[*] Installing Tool-backup \e[m "
+	        if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+	
+		 sh metasploit.sh
+		 else
+	      echo -e "\e[34m[*] Installing Metasploit \e[m "
 	      sleep 5
 	      clear
 	      cd $HOME
 	      pkg install unstable-repo
-		  pkg install metasploit
+	      pkg install metasploit
 		  fi
 	echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 

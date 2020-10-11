@@ -551,7 +551,7 @@ elif [[ $n == 16 ]]; then
 		  git clone https://github.com/maldevel/IPGeoLocation
 		  pip3 install -r requirements.txt --user
 		  chmod +x *
-		  ./ip2geolocation.py -h
+		  ./ipgeolocation.py -h
 	      fi
 	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 

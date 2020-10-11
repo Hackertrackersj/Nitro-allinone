@@ -27,21 +27,21 @@ echo " "
 echo " "
 sleep 6.0
 clear
-echo -e "$red                         ChEcKiNg..>$rset"
+echo -e "$red             ChEcKiNg..>$rset"
 sleep 2.0
 clear
-echo -e "$red                         ChEcKiNg...>$rset"
+echo -e "$red             ChEcKiNg...>$rset"
 sleep 2.0
 clear
-echo -e "$red                         ChEcKiNg....>$rset"
+echo -e "$red             ChEcKiNg....>$rset"
 sleep 2.0
 clear
-echo -e "$red                         ChEcKiNg.....>$rset"
+echo -e "$red              ChEcKiNg.....>$rset"
 sleep 2.0
 clear
 echo " "
 echo " "
-echo -e "$grn                updating the Nitro-allinone please wait$rset"
+echo -e "$grn      updating the Nitro-allinone please wait$rset"
 sleep 2.0
 cd $HOME
 rm -rf Nitro-allinone
@@ -50,7 +50,7 @@ cd Nitro-allinone
 chmod +x *
 clear
 echo " "
-echo -e "$grn               Nitro-allinone has been updated check it now...$rset"
+echo -e "$grn    Nitro-allinone has been updated check it now...$rset"
 sleep 3.0
 echo " "
 cd $HOME

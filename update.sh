@@ -56,4 +56,5 @@ echo " "
 cd $HOME
 cd Nitro-allinone
 ./Nitro-allinone
+clear
 sleep 1.0

@@ -479,9 +479,9 @@ elif [[ $n == 14 ]]; then
 	      apt update
  	      apt upgrade
 	      git clone https://github.com/Ranginang67/DarkFly-Tool
-		  cd DarkFly-Tool
-		  chmod +x *
-		  sh install
+	      cd DarkFly-Tool
+	      chmod +x *
+	      sh install
 	      fi
 	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
@@ -501,8 +501,8 @@ elif [[ $n == 15 ]]; then
                 if [ -d "$DIR" ]
 	     then
 	     cd $HOME
-		 cd T-Header
-		 bash t-header.sh
+	     cd T-Header
+	     bash t-header.sh
 
 	     else
 
@@ -535,13 +535,11 @@ elif [[ $n == 16 ]]; then
                 if [ -d "$DIR" ]
 	     then
 	     cd $HOME
-		 cd IPGeoLocation
-		 ./ip2geolocation.py -h
-
-
+	     cd IPGeoLocation
+	     ./ip2geolocation.py -h
+	     
 	     else
-
-	      echo -e "\e[34m[*] Installing IPGeoLocation \e[m "
+	     echo -e "\e[34m[*] Installing IPGeoLocation \e[m "
 	      sleep 5
 	      clear
 	      cd $HOME
@@ -573,7 +571,7 @@ elif [[ $n == 17 ]]; then
                 if [ -d "$DIR" ]
 	     then
 	     cd $HOME
-		 apachectl
+	     apachectl
 
 	     else
 
@@ -584,7 +582,7 @@ elif [[ $n == 17 ]]; then
 	      apt update
  	      apt upgrade
 	      apt install apache2
-		  apachectl
+	      apachectl
 	      fi
 	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
@@ -604,8 +602,8 @@ elif [[ $n == 18 ]]; then
                 if [ -d "$DIR" ]
 	     then
 	     cd $HOME
-		 cd hakkuframework
-		 python hakku
+	     cd hakkuframework
+	     python hakku
 
 	     else
 
@@ -616,9 +614,9 @@ elif [[ $n == 18 ]]; then
 	      apt update
  	      apt upgrade
 	      git clone https://github.com/4shadoww/hakkuframework
-		  cd hakkuframework
-		  chmod +x *
-		  python hakku
+	      cd hakkuframework
+	      chmod +x *
+	      python hakku
 	      fi
 	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
@@ -638,8 +636,8 @@ elif [[ $n == 19 ]]; then
                 if [ -d "$DIR" ]
 	     then
 	     cd $HOME
-		 cd smb-scanner
-		 ./smbscan
+	     cd smb-scanner
+             ./smbscan
 
 	     else
 
@@ -673,8 +671,8 @@ elif [[ $n == 20 ]]; then
                 if [ -d "$DIR" ]
 	     then
 	     cd $HOME
-		 cd seeker
-		 ./seeker.py
+	     cd seeker
+	     ./seeker.py
 
 	     else
 

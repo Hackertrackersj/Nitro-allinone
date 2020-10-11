@@ -63,7 +63,9 @@ read answer
        
        am start -a android.intent.action.VIEW -d https://youtu.be/5uFVhDACups >> /dev/null 2>&1
 	else
-		echo
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
 		fi
 elif [[ $n == 2 || $n == 02 ]]; then
 
@@ -93,7 +95,9 @@ read answer
        
        am start -a android.intent.action.VIEW -d https://youtu.be/oDYvGyEXgYw >> /dev/null 2>&1
 	else
-		echo
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
 		fi
 elif [[ $n == 3 || $n == 03 ]]; then
 
@@ -126,7 +130,9 @@ read answer
        
        am start -a android.intent.action.VIEW -d https://youtu.be/gq7NKkNYuVA >> /dev/null 2>&1
 	else
-		echo
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
 		fi
 elif [[ $n == 4 || $n == 04 ]]; then
 
@@ -156,7 +162,9 @@ read answer
        
        am start -a android.intent.action.VIEW -d https://youtu.be/1ocmbtCrAn8 >> /dev/null 2>&1
 	else
-		echo
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
 		fi
 
 elif [[ $n == 5 || $n == 05 ]]; then
@@ -187,7 +195,9 @@ read answer
        
        am start -a android.intent.action.VIEW -d https://youtu.be/JbDl6xpCU3A >> /dev/null 2>&1
 	else
-		echo
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
 		fi		
 elif [[ $n == 6 || $n == 06 ]]; then
 
@@ -222,7 +232,9 @@ read answer
        
        am start -a android.intent.action.VIEW -d https://youtu.be/H-9qQbLfSnU >> /dev/null 2>&1
 	else
-		echo
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
 		fi		
 elif [[ $n == 7 || $n == 07 ]]; then
 
@@ -255,7 +267,9 @@ read answer
        
        am start -a android.intent.action.VIEW -d https://youtu.be/ZtQSb7639so >> /dev/null 2>&1
 	else
-		echo
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
 		fi		
 elif [[ $n == 8 || $n == 08 ]]; then
 
@@ -281,7 +295,9 @@ read answer
        
        am start -a android.intent.action.VIEW -d https://youtu.be/5uFVhDACups >> /dev/null 2>&1
 	else
-		echo
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
 		fi		
 elif [[ $n == 9 || $n == 09 ]]; then
 

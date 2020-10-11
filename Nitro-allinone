@@ -24,7 +24,7 @@ echo -e "\e[32m[\e[33m03\e[32m]\e[96m Tbomb \e[m                \e[32m[\e[33m04\
 echo -e "\e[32m[\e[33m05\e[32m]\e[96m Tool-backup \e[m          \e[32m[\e[33m06\e[32m]\e[96m Pass-gen \e[m "
 echo -e "\e[32m[\e[33m07\e[32m]\e[96m Tool-x \e[m               \e[32m[\e[33m08\e[32m]\e[96m metasploit \e[m "
 echo -e "\e[32m[\e[33m09\e[32m]\e[96m Evil-create framwork \e[m \e[32m[\e[33m10\e[32m]\e[96m nmap \e[m "
-echo -e "\e[32m[\e[33m99\e[32m]\e[96m exit \e[m                 \e[32m[\e[33m00\e[32m]\e[96m update \e[m "                 
+echo -e "\e[32m[\e[33m00\e[32m]\e[96m update \e[m "                 
 echo -e "\e[92m=========================================================\e[m "
 echo " "
 read -p $'\e[34m[*]\e[33m Enter Your Choice : \e[0m' n
@@ -340,14 +340,7 @@ read answer
        am start -a android.intent.action.VIEW -d https://youtu.be/gKkkRM-eWTQ >> /dev/null 2>&1
 	else
 		echo     
-	fi		
-elif [[ $n == 99 || $n == 999 ]]; then
-	      DIR="$HOME/exit"
-	      echo -e "\e[34m[*] Bye Bye see you soon \e[m "
-	      sleep 5
-	      clear
-	      cd $HOME
-	      fi											
+	fi												
 elif [[ $n == 0 || $n == 00 ]]; then
 	      DIR="$HOME/"
 	      echo -e "\e[34m[*] updating \e[m "

@@ -318,7 +318,8 @@ elif [[ $n == 10 ]]; then
                 if [ -d "$DIR" ]
 	     then
 	     cd $HOME
-		 nmap -h 		 
+		 nmap -h 	
+		 fi
 
 	     else
 

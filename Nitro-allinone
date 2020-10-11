@@ -22,7 +22,9 @@ echo " "
 echo -e "\e[92m=======================================================================\e[m "
 echo -e "\e[32m[\e[33m01\e[32m]\e[96m Termux-package \e[m                \e[32m[\e[33m02\e[32m]\e[96m Ngrok \e[m " 
 echo -e "\e[32m[\e[33m03\e[32m]\e[96m Tbomb \e[m                         \e[32m[\e[33m4\e[32m]\e[96m  e-mail bomber \e[m "
-echo -e "\e[32m[\e[33m05\e[32m]\e[96m Ngrok \e[m                         \e[32m[\e[33m00\e[32m]\e[96m update \e[m "                 
+echo -e "\e[32m[\e[33m05\e[32m]\e[96m Tool-backup \e[m                   \e[32m[\e[33m06\e[32m]\e[96m Pass-gen \e[m "
+echo -e "\e[32m[\e[33m07\e[32m]\e[96m Tool-x \e[m                        \e[32m[\e[33m08\e[32m]\e[96m metasploit \e[m "
+echo -e "\e[32m[\e[33m09\e[32m]\e[96m Evil create framwork \e[m           \e[32m[\e[33m00\e[32m]\e[96m update \e[m "                 
 echo -e "\e[92m=======================================================================\e[m "
 echo " "
 read -p $'\e[34m[*]\e[33m Enter Your Choice : \e[0m' n
@@ -155,6 +157,156 @@ read answer
 	else
 		echo
 		fi
+
+elif [[ $n == 5 || $n == 05 ]]; then
+
+	     DIR="$HOME/Tool-backup"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+		 cd Tool-backup
+		 bash Tool-backup.sh		 
+
+	     else
+
+	      echo -e "\e[34m[*] Installing Tool-backup \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      git clone https://github.com/Hackertrackersj/Tool-backup
+		  cd Tool-backup
+		  bash Tool-backup.sh
+	      
+		  fi
+	echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/JbDl6xpCU3A >> /dev/null 2>&1
+	else
+		echo
+		fi		
+elif [[ $n == 6 || $n == 06 ]]; then
+
+	     DIR="$HOME/Pass-gen"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+		 cd Tool-Pass-gen
+		 python Pass-gen.py		 
+
+	     else
+
+	      echo -e "\e[34m[*] Installing Tool-backup \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      pip install requests
+		  pip install random
+		  ls
+		  git clone https://github.com/Hackertrackersj/Pass-gen
+		  ls
+		  cd Pass-gen
+		  ls
+		  python Pass-gen.py
+	      
+		  fi
+	echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/H-9qQbLfSnU >> /dev/null 2>&1
+	else
+		echo
+		fi		
+elif [[ $n == 7 || $n == 07 ]]; then
+
+	     DIR="$HOME/Tool-X"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+		 cd Tool-X
+		 sh install
+		 
+
+	     else
+
+	      echo -e "\e[34m[*] Installing Tool-backup \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      apt update
+		  apt install git
+		  git clone https://github.com/rajkumardusad/Tool-X.git
+		  cd Tool-X
+		  chmod +x install
+		  sh install
+	      
+		  fi
+	echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/ZtQSb7639so >> /dev/null 2>&1
+	else
+		echo
+		fi		
+elif [[ $n == 8 || $n == 08 ]]; then
+
+	     DIR="$HOME/metasploit"
+	      echo -e "\e[34m[*] Installing Tool-backup \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      pkg install unstable-repo
+		  pkg install metasploit
+		  fi
+	echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/5uFVhDACups >> /dev/null 2>&1
+	else
+		echo
+		fi		
+elif [[ $n == 9 || $n == 09 ]]; then
+
+	     DIR="$HOME/Evil-create-framework"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+		 cd Evil-create-framework
+		 sh install.sh 		 
+
+	     else
+
+	      echo -e "\e[34m[*] Installing Tool-backup \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      git clone https://github.com/LOoLzeC/Evil-create-framework.git 
+		  cd Evil-create-framework 
+		  sh install.sh 
+	      
+		  fi
+	echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/6Gni5t3a2VQ >> /dev/null 2>&1
+	else
+		echo
+		fi										
 elif [[ $n == 0 || $n == 00 ]]; then
  
 	      echo -e "\e[34m[*] updating \e[m "

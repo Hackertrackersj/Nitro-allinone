@@ -306,7 +306,7 @@ read answer
 		echo
 		fi										
 elif [[ $n == 0 || $n == 00 ]]; then
- 
+	      DIR="$HOME/"
 	      echo -e "\e[34m[*] updating \e[m "
 	      sleep 5
 	      clear

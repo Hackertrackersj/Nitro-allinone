@@ -549,9 +549,9 @@ elif [[ $n == 16 ]]; then
 		  easy_install3 pip
 		  pip3 install -r requirements.txt
 		  git clone https://github.com/maldevel/IPGeoLocation
-		  pip3 install -r requirements.txt --user
+		  pip3 install -r requirements.txt 
 		  chmod +x *
-		  ./ipgeolocation.py -h
+		  cd $HOME
 	      fi
 	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 

@@ -342,8 +342,8 @@ read answer
 	else
 		echo     
 		  fi		
-elif [[ $n == 99]]; then
-	      DIR="$HOME/"
+elif [[ $n == 99 || $n == 999 ]]; then
+	      DIR="$HOME/exit"
 	      echo -e "\e[34m[*] Bye Bye see you soon \e[m "
 	      sleep 5
 	      clear

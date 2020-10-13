@@ -648,10 +648,10 @@ elif [[ $n == 19 ]]; then
 	      apt update
  	      apt upgrade
 	      git clone https://github.com/Hackertrackersj/smb-scanner
-		  cd smb-scanner
-		  chmod +x *
-		  bash install.sh
-		  ./smbscan
+	      cd smb-scanner
+	      chmod +x *
+              bash install.sh
+	      ./smbscan
 	      fi
 	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
@@ -683,10 +683,10 @@ elif [[ $n == 20 ]]; then
 	      apt update
  	      apt upgrade
 	      git clone https://github.com/thewhiteh4t/seeker
-		  cd seeker/
-		  chmod +x *
-		  ./termux_install.sh
-		  ./seeker.py
+	      cd seeker/
+	      chmod +x *
+	      ./termux_install.sh
+	      ./seeker.py
 	      fi
 	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
 
@@ -700,7 +700,153 @@ read answer
 		cd Nitro-allinone
 		./Nitro-allinone
 		fi   								
-																									
+elif [[ $n == 21 ]]; then
+
+	     DIR="$HOME/Optiva-Framework"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+	     cd seekerOptiva-Framework
+	     python2 optiva.py
+
+	     else
+
+	      echo -e "\e[34m[*] Installing Optiva Framework \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      apt update
+ 	      apt upgrade
+	      git clone https://github.com/joker25000/Optiva-Framework
+	      cd Optiva-Framework
+	      chmod +x *
+	      bash install.sh
+	      python optiva.py
+	      fi
+	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/rMsTaPmRpFA >> /dev/null 2>&1
+	   
+	else
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
+		fi   
+elif [[ $n == 22 ]]; then
+
+	     DIR="$HOME/SigPloit"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+	     cd SigPloit
+	     
+
+	     else
+
+	      echo -e "\e[34m[*] Installing ss7 \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      apt update
+ 	      apt upgrade
+	      git clone https://github.com/SigPloiter/SigPloit
+	      cd SigPloit
+	      chmod +x *
+	      pip2 install -r requirements.txt
+	      python2 sigploit.py
+	      fi
+	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/lOOK8Tz4Cz8 >> /dev/null 2>&1
+	   
+	else
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
+		fi   	
+elif [[ $n == 23 ]]; then
+
+	     DIR="$HOME/Hammer"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+	     cd Hammer
+	     python hammer.py
+	     
+
+	     else
+
+	      echo -e "\e[34m[*] Installing hammer \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      apt update
+ 	      apt upgrade
+	      apt install dnsutils
+	      git clone https://github.com/rk1342k/Hammer
+	      cd Hammer
+	      chmod +x *
+	      python hammer.py
+	      fi
+	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/45sNj3AQmTI >> /dev/null 2>&1
+	   
+	else
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
+		fi   				
+elif [[ $n == 24 ]]; then
+
+	     DIR="$HOME/Sublistr"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+	     cd Sublistr
+             python2 sublist3r.py -h
+	     
+
+	     else
+
+	      echo -e "\e[34m[*] Installing sublist3r \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      apt update
+ 	      apt upgrade
+	      apt install dnsutils
+	      git clone https://github.com/aboul3la/Sublist3r
+	      cd Sublist3r
+	      chmod +x *
+	      pip install -r requirements.txt
+	      python2 sublist3r.py -h
+	      fi
+	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/k8SYQJzVJU4 >> /dev/null 2>&1
+	   
+	else
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
+		fi   																																
 elif [[ $n == 0 || $n == 00 ]]; then
 	      DIR="$HOME/"
 	      echo -e "\e[34m[*] updating \e[m "

@@ -854,6 +854,7 @@ elif [[ $n == 99 ]]; then
 	      sleep 5
 	      clear
 	      cd $HOME
+	      rm -rf Nitro-allinone
 	      fi  																																								
 elif [[ $n == 0 || $n == 00 ]]; then
 	      DIR="$HOME/"

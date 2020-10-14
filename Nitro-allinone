@@ -31,7 +31,7 @@ echo -e "\e[32m[\e[33m17\e[32m]\e[96m Apache2 \e[m         \e[32m[\e[33m18\e[32m
 echo -e "\e[32m[\e[33m19\e[32m]\e[96m smb scanner \e[m     \e[32m[\e[33m20\e[32m]\e[96m seeker \e[m "
 echo -e "\e[32m[\e[33m21\e[32m]\e[96m optiva \e[m          \e[32m[\e[33m22\e[32m]\e[96m ss7 \e[m "
 echo -e "\e[32m[\e[33m23\e[32m]\e[96m hammer \e[m          \e[32m[\e[33m24\e[32m]\e[96m Sublit3r \e[m "
-echo -e "\e[32m[\e[33m00\e[32m]\e[96m update \e[m          \e[32m[\e[33m99\e[32m]\e[96m exit \e[m "                 
+echo -e "\e[32m[\e[33m00\e[32m]\e[96m update \e[m "                 
 echo -e "\e[92m===============================================================================\e[m "
 echo " "
 read -p $'\e[34m[*]\e[33m Enter Your Choice : \e[0m' n
@@ -847,16 +847,7 @@ read answer
 		cd $HOME
 		cd Nitro-allinone
 		./Nitro-allinone
-		fi 
-elif [[ $n == 99 ]]; then
-	      DIR="$HOME/"
-	      echo -e "\e[34m[*] exiting bye bye see you soon  \e[m "
-	      sleep 5
-	      clear
-	      cd $HOME
-	      rm -rf Nitro-allinone
-	      cd
-	      fi  																																								
+		fi 																																								
 elif [[ $n == 0 || $n == 00 ]]; then
 	      DIR="$HOME/"
 	      echo -e "\e[34m[*] updating \e[m "

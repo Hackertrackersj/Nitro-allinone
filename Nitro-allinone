@@ -31,6 +31,7 @@ echo -e "\e[32m[\e[33m17\e[32m]\e[96m Apache2 \e[m         \e[32m[\e[33m18\e[32m
 echo -e "\e[32m[\e[33m19\e[32m]\e[96m smb scanner \e[m     \e[32m[\e[33m20\e[32m]\e[96m seeker \e[m "
 echo -e "\e[32m[\e[33m21\e[32m]\e[96m optiva \e[m          \e[32m[\e[33m22\e[32m]\e[96m ss7 \e[m "
 echo -e "\e[32m[\e[33m23\e[32m]\e[96m hammer \e[m          \e[32m[\e[33m24\e[32m]\e[96m Sublit3r \e[m "
+echo -e "\e[32m[\e[33m25\e[32m]\e[96m A-rat \e[m '
 echo -e "\e[32m[\e[33m00\e[32m]\e[96m update \e[m "                 
 echo -e "\e[92m===============================================================================\e[m "
 echo " "
@@ -847,7 +848,43 @@ read answer
 		cd $HOME
 		cd Nitro-allinone
 		./Nitro-allinone
-		fi 																																								
+		fi 	
+elif [[ $n == 25 ]]; then
+
+	     DIR="$HOME/A-Rat"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+	     cd A-Rat
+		 python2 A-Rat.py
+	     
+
+	     else
+
+	      echo -e "\e[34m[*] Installing A-Rat \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      apt update
+ 	      apt upgrade
+	      git clone https://github.com/PlagueSecurity/A-Rat
+		  cd A-Rat
+		  chmod +x *
+		  python2 A-Rat.py
+	      fi
+	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/cFoPDptnms4 >> /dev/null 2>&1
+	   
+	else
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
+		fi 						
 elif [[ $n == 0 || $n == 00 ]]; then
 	      DIR="$HOME/"
 	      echo -e "\e[34m[*] updating \e[m "

@@ -31,7 +31,7 @@ echo -e "\e[32m[\e[33m17\e[32m]\e[96m Apache2 \e[m         \e[32m[\e[33m18\e[32m
 echo -e "\e[32m[\e[33m19\e[32m]\e[96m smb scanner \e[m     \e[32m[\e[33m20\e[32m]\e[96m seeker \e[m "
 echo -e "\e[32m[\e[33m21\e[32m]\e[96m optiva \e[m          \e[32m[\e[33m22\e[32m]\e[96m ss7 \e[m "
 echo -e "\e[32m[\e[33m23\e[32m]\e[96m hammer \e[m          \e[32m[\e[33m24\e[32m]\e[96m Sublit3r \e[m "
-echo -e "\e[32m[\e[33m25\e[32m]\e[96m A-rat \e[m '
+echo -e "\e[32m[\e[33m25\e[32m]\e[96m A-rat \e[m "
 echo -e "\e[32m[\e[33m00\e[32m]\e[96m update \e[m "                 
 echo -e "\e[92m===============================================================================\e[m "
 echo " "

@@ -31,7 +31,7 @@ echo -e "\e[32m[\e[33m17\e[32m]\e[96m Apache2 \e[m         \e[32m[\e[33m18\e[32m
 echo -e "\e[32m[\e[33m19\e[32m]\e[96m smb scanner \e[m     \e[32m[\e[33m20\e[32m]\e[96m seeker \e[m "
 echo -e "\e[32m[\e[33m21\e[32m]\e[96m optiva \e[m          \e[32m[\e[33m22\e[32m]\e[96m ss7 \e[m "
 echo -e "\e[32m[\e[33m23\e[32m]\e[96m hammer \e[m          \e[32m[\e[33m24\e[32m]\e[96m Sublit3r \e[m "
-echo -e "\e[32m[\e[33m25\e[32m]\e[96m A-rat \e[m "
+echo -e "\e[32m[\e[33m25\e[32m]\e[96m A-rat \e[m           \e[32m[\e[33m26\e[32m]\e[96m Infoga "
 echo -e "\e[32m[\e[33m00\e[32m]\e[96m update \e[m "                 
 echo -e "\e[92m===============================================================================\e[m "
 echo " "
@@ -882,7 +882,45 @@ read answer
 		cd $HOME
 		cd Nitro-allinone
 		./Nitro-allinone
-		fi 						
+		fi 
+elif [[ $n == 26 ]]; then
+
+	     DIR="$HOME/phoneinfo"
+                if [ -d "$DIR" ]
+	     then
+	     cd $HOME
+	     cd phoneinfo
+		 python3 phoneinfoga.py -h
+	     
+
+	     else
+
+	      echo -e "\e[34m[*] Installing phoneinfo \e[m "
+	      sleep 5
+	      clear
+	      cd $HOME
+	      apt update
+ 	      apt upgrade
+	      git clone https://github.com/Hackertrackersj/phoneinfo
+	      cd phoneinfo
+	      chmod +x *
+	      bash phoneinfoga.sh
+	      unzip PhoneInfoga.zip
+	       python3 phoneinfoga.py -h
+	      fi
+	 echo -en "\e[92m Do you wish to see a practical video on it (y/n)? \e[m "
+
+read answer
+ 
+ 	 if [ "$answer" != "${answer#[Yy]}" ] ;then
+       
+       am start -a android.intent.action.VIEW -d https://youtu.be/g8DXyjUP564 >> /dev/null 2>&1
+	   
+	else
+		cd $HOME
+		cd Nitro-allinone
+		./Nitro-allinone
+		fi
 elif [[ $n == 0 || $n == 00 ]]; then
 	      DIR="$HOME/"
 	      echo -e "\e[34m[*] updating \e[m "

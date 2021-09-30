@@ -8,4 +8,4 @@ git clone https://github.com/Hackertrackersj/Nitro-allinone<br>
 cd Nitro-allinone<br>
 chmod +x *<br>
 ./Nitro-allin one<br>
-Youtube channel <a href="https://www.youtube.com/c/NitroHacker><strong>Subscribe Please</strong></a>
+Youtube channel <a href="https://www.youtube.com/c/NitroHacker">Subscribe Please </a>
